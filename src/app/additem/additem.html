@@ -1,0 +1,22 @@
+<div class="container-fluid mt-3">
+  <div class="row g-2 align-items-center">
+    <div class="col">
+      <input #name class="form-control form-control-sm" placeholder="Repo Name">
+    </div>
+    <div class="col">
+      <input #description class="form-control form-control-sm" placeholder="Description">
+    </div>
+    <div class="col-2">
+      <input #image class="form-control form-control-sm" placeholder="Image URL">
+    </div>
+    <div class="col-3">
+      <input #link class="form-control form-control-sm" placeholder="GitHub Link">
+    </div>
+    <div class="col-auto">
+      <button class="btn btn-sm btn-dark px-4" 
+              (click)="submitForm(name.value, description.value, image.value, link.value)">
+        Add
+      </button>
+    </div>
+  </div>
+</div>
